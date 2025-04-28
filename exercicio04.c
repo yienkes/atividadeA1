@@ -38,7 +38,7 @@ void calcularESalario(Funcionario funcionarios[], int n, float salario_referenci
             salario_base = salario_referencia * 1.9;
         }
 
-        float salario_hora = salario_base / 160; 
+        float salario_hora = salario_base / 160; //Valor de horas totais no mês
         float salario_normais = funcionarios[i].horas_normais * salario_hora;
         float salario_extras = funcionarios[i].horas_extras * salario_hora * 1.3;
         float salario_bruto = salario_normais + salario_extras;
